@@ -26,8 +26,6 @@ nav {
     text-align: right;
 }
 
-/* Lembrar que esse li é a CAIXA, pra mudar o conteudo preciso ser
-mais específico e mudar a anchor tag */
 .nav-links ul li {
     list-style: none;
     display: inline-block;
@@ -35,8 +33,6 @@ mais específico e mudar a anchor tag */
     position: relative;
 }
 
-/* after é um pseu element. Cria depois do element que eu selecionei a string
-que ta de value pra property content */
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -115,8 +111,6 @@ header>nav>a>img {
         display: block;
     }
 
-    /* z-index: quando tenho um element na frente do outro, quem tiver o maior
-    value de z-index vai aparecer na frente */
     .nav-links {
         position: absolute;
         background: #f44336;
@@ -325,7 +319,7 @@ p {
     color: #fc695f;
 }
 
-/* Call To Action */
+/* Footer Call To Action */
 .cta {
     margin: 70px auto;
     width: 80%;
