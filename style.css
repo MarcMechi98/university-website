@@ -135,16 +135,14 @@ header>nav>a>img {
 }
 
 /* Section header */
-
 .section-header {
-    background: blue;
-    margin: 0rem auto 1rem;
+    background: yellow;
+    margin: 0rem auto 2rem;
 }
 
 .section-header>h1 {
     font-size: 2rem;
     font-weight: 600;
-    background: yellow;
     margin-bottom: 1rem;
 }
 
@@ -153,19 +151,17 @@ header>nav>a>img {
     font-size: 1rem;
     font-weight: 300;
     line-height: 22px;
-    background: yellow;
+}
+
+/* Section-body */
+.section-body {
+    width: 80%;
+    text-align: center;
+    margin: 3rem auto 0;
 }
 
 /* Courses */
-.course {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    margin-top: 2rem;
-}
-
 .row {
-    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -179,7 +175,7 @@ header>nav>a>img {
     transition: .5s;
 }
 
-.course h3 {
+.courses h3 {
     color: #AD486D;
     margin-bottom: 1rem;
 }
@@ -193,16 +189,13 @@ header>nav>a>img {
     .row {
         flex-direction: column;
     }
+
+    .course-col {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Campus */
-.campus {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 3rem;
-}
-
 .campus-col {
     flex-basis: 32%;
     border-radius: .8em;
@@ -249,16 +242,9 @@ header>nav>a>img {
 }
 
 /* Facilities */
-.facilities {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 .facilities-col {
     flex-basis: 31%;
     border-radius: .8em;
-    margin-bottom: 5%;
     text-align: left;
 }
 
@@ -277,21 +263,9 @@ header>nav>a>img {
 }
 
 /* Student Reviews */
-.testimonials {
-    width: 80%;
-    margin: auto;
-    padding: 2rem;
-    text-align: center;
-    color: #1c1e22;
-}
-
 .testimonials>.row {
     display: flex;
     justify-content: space-around;
-}
-
-.testimonials>p {
-    margin: 1.5rem;
 }
 
 .testimonials .testimonials-col {
@@ -302,7 +276,7 @@ header>nav>a>img {
     background: #fff3f3;
     padding: 25px;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .testimonials-col>img {
@@ -329,7 +303,6 @@ header>nav>a>img {
 
 /* Footer Call To Action */
 .cta {
-    margin: 50px auto 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(images/banner2.jpg);
     background-position: center;
@@ -357,21 +330,27 @@ header>nav>a>img {
 
 /* Footer */
 footer {
+    margin-top: 3rem;
     text-align: center;
     background: #9eaac0;
 }
 
-footer h4 {
-    margin: 20px auto 0;
+.footer-bottom {
+    color: #323539;
+}
+
+.footer-bottom h4 {
+    margin: 2.5rem auto 0;
     font-weight: 600;
+}
+
+.footer-bottom>p:first-of-type {
+    margin: 1rem auto;
 }
 
 .icons {
     font-size: 1.8rem;
-    margin-top: 10px;
+    margin: 10px auto 8px;
     cursor: pointer;
-}
-
-footer>p {
-    color: #323539;
+    color: #1c1e22;
 }
