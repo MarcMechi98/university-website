@@ -78,14 +78,17 @@ que ta de value pra property content */
     line-height: 2rem;
 }
 
+header>nav>a>img {
+    width: 200px;
+}
+
 .hero-btn {
-    border: 1px solid #e8f3ff;
-    color: #e8f3ff;
+    color: rgb(28, 28, 87);
     display: inline-block;
     text-decoration: none;
     padding: .8rem 1.8rem;
     font-size: 1.4;
-    background: transparent;
+    background: rgb(181, 220, 233);
     position: relative;
     cursor: pointer;
     border-radius: .6em;
@@ -94,8 +97,8 @@ que ta de value pra property content */
 
 .hero-btn:hover {
     background: #f44336;
-    border: 1px solid #f44336;
-    transition: .5s;
+    color: #e8f3ff;
+    transition: .3s;
 }
 
 #close-btn,
@@ -271,7 +274,7 @@ p {
     margin-top: 1rem;
 }
 
-/* Testimonials */
+/* Student Reviews */
 .testimonials {
     width: 80%;
     margin: auto;
@@ -319,7 +322,7 @@ p {
 
 .testimonials-col .fa-star,
 .fa-star-half-stroke {
-    color: #f44336;
+    color: #fc695f;
 }
 
 /* Call To Action */
