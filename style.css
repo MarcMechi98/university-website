@@ -147,7 +147,6 @@ header>nav>a>img {
 /* MAIN */
 /* Section header */
 .section-header {
-    background: yellow;
     margin: 0rem auto 2rem;
 }
 
@@ -176,7 +175,6 @@ header>nav>a>img {
 .row {
     display: flex;
     justify-content: space-between;
-
 }
 
 .course-col {
@@ -252,11 +250,22 @@ header>nav>a>img {
     transform: translateX(-50%);
     opacity: 0;
     transition: .5s;
+    line-height: 2.5rem;
 }
 
 .layer:hover h3 {
     opacity: 1;
     bottom: 49%;
+}
+
+@media (max-width: 800px) {
+    .campus-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .campus-col:nth-of-type(3) {
+        margin-bottom: 0;
+    }
 }
 
 /* Facilities */
@@ -267,7 +276,7 @@ header>nav>a>img {
 }
 
 .facilities-col p {
-    padding: 1rem 0 2rem 0;
+    margin-top: .7rem;
 }
 
 .facilities-col img {
@@ -278,6 +287,16 @@ header>nav>a>img {
 .facilities-col h3 {
     text-align: left;
     margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    .facilities-col {
+        margin-bottom: 1.5rem;
+    }
+
+    .facilities-col:nth-of-type(3) {
+        margin-bottom: 0;
+    }
 }
 
 /* Student Reviews */
@@ -341,7 +360,7 @@ header>nav>a>img {
 
 .cta input {
     display: block;
-    min-width: 30%;
+    min-width: 20%;
     max-width: 70%;
     height: 35px;
     margin: auto;
