@@ -169,22 +169,24 @@ header>nav>a>img {
 .section-body {
     width: 80%;
     text-align: center;
-    margin: 3rem auto 0;
+    margin: 4rem auto 0;
 }
 
 /* Courses */
 .row {
     display: flex;
     justify-content: space-between;
+
 }
 
 .course-col {
     flex-basis: 31%;
     background: #fff3f3;
-    border-radius: 1em;
+    border-radius: .7em;
     padding: 2rem;
     box-sizing: border-box;
     transition: .5s;
+    margin-bottom: 0;
 }
 
 .courses h3 {
@@ -203,20 +205,24 @@ header>nav>a>img {
     }
 
     .course-col {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .course-col:nth-of-type(3) {
+        margin-bottom: 0;
     }
 }
 
 /* Campus */
 .campus-col {
-    flex-basis: 32%;
-    border-radius: .8em;
-    margin-bottom: 30px;
+    flex-basis: 31%;
+    border-radius: .7em;
     position: relative;
     overflow: hidden;
 }
 
 .campus-col>img {
+    height: 400px;
     width: 100%;
     display: block;
 }
@@ -227,7 +233,7 @@ header>nav>a>img {
     position: absolute;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: .4s;
 }
 
 .layer:hover {
@@ -256,7 +262,7 @@ header>nav>a>img {
 /* Facilities */
 .facilities-col {
     flex-basis: 31%;
-    border-radius: .8em;
+    border-radius: .7em;
     text-align: left;
 }
 
