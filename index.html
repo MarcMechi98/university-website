@@ -3,23 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduford</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/55e7bc77af.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="main-header">
+    <header>
         <nav>
             <a href="index.html" class="logo"><img src="images/logo.png" alt="University logo"> </a>
             <div class="nav-links" id="navBox">
-                <i id="close-btn" onclick="hideMenu()" class="fa-regular fa-circle-xmark"></i>
+                <button id="close-btn" onclick="hideMenu()" class="close-btn">X</button>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -28,7 +24,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i id="hamburger" onclick="showMenu()" class="fa-solid fa-bars"></i>
+            <button id="hamburger" onclick="showMenu()" class="hamburger-btn">Menu</button>
         </nav>
         <div class=" text-box">
             <h1>World's Biggest University</h1>
@@ -40,26 +36,27 @@
                 corporis et explicabo ipsam.
 
             </p>
-            <a href="" class="hero-btn">Visit Us!</a>
+            <a href="http://www.example.com" class="hero-btn">Visit Us!</a>
         </div>
     </header>
 
     <!-- Main -->
     <main>
         <!-- Courses -->
-        <section class="section-body courses">
-            <header class="section-header">
+        <section class="courses-section">
+            <header>
                 <h1>Courses We Offer</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea magnam suscipit veniam itaque
                     aperiam,
                     nobis quas quisquam numquam dolorum alias.</p>
             </header>
-            <div class="row">
-                <div class="course-col">
+            <div class="courses-row">
+                <div class="courses-col">
                     <h3>Bachelor's</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi aliquid mollitia
                         eveniet
-                        esse alias. Nemo, adipisci? Aliquid consequuntur odio esse minus eum ipsum tempore asperiores,
+                        esse alias. Nemo, adipisci? Aliquid consequuntur odio esse
+                        alias. Nemo, adipisci? Aliquid consequuntur odio esse minus eum ipsum tempore asperiores,
                         tempora numquam iure fugit!</p>
                 </div>
                 <div class="course-col">
